@@ -13,13 +13,18 @@ def resolver_sistema(a,b,c,p,q,r):
     # Calculamos el determinante del sistema
     tiene_solucionn_unica = True
     Determinante  = a*q - p*b
+    print(f"Determinante: {a}*{q} - {p}*{b} = {Determinante}")
     if Determinante != 0:
         #Dx = c·q − b·r
         Dx = c*q - b*r
+        print(f"Dx: {c}*{q} - {b}*{r} = {Dx:.2f}")
         #Dy = a·r − c·p
         Dy = a*r - c*p
+        print(f"Dy: {a}*{r} - {c}*{p} = {Dy:.2f}")
         x = Dx / Determinante
+        print(f"x = Dx / Determinante = {Dx:.2f} / {Determinante:.2f} = {x:.2f}")
         y = Dy / Determinante
+        print(f"y = Dy / Determinante = {Dy:.2f} / {Determinante:.2f} = {y:.2f}")
         return (tiene_solucionn_unica,x, y) #Devolvemos true y las soluciones
     else:
         tiene_solucionn_unica = False
