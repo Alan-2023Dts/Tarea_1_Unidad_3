@@ -24,3 +24,8 @@ def resolver_sistema(a,b,c,p,q,r):
     else:
         tiene_solucionn_unica = False
         return (tiene_solucionn_unica, None, None)  # El none funciona como indicador de que no hay solución única (devuelve nada)
+    
+    
+
+
+ 

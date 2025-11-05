@@ -1,10 +1,10 @@
-from Utilidades import digitos_de_numero
+from Utilidades import digitos_de_numero #importamos la funcion para obtener los digitos de un numero
 
 def suma_numeros_extremos(numero):
-    digitos = digitos_de_numero(numero)
-    if len (digitos) == 0:
+    digitos = digitos_de_numero(numero) #Obtenemos los digitos del numero y los almacenamos en una lista
+    if len (digitos) == 0: #Si no hay digitos, retornamos 0
         return 0
-    elif len(digitos) == 1:
+    elif len(digitos) == 1: #Si solo hay un digito, retornamos ese digito
         return digitos[0] 
     else :
         suma = 0
