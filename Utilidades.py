@@ -9,3 +9,15 @@ def digitos_de_numero(numero):
 # Usamos abs para manejar números negativos y cambiarlo a positivos y los almacenamos en una lista.
 
     
+def limpiar_Consola():
+    import os
+    input("Presiona Enter para continuar...")
+    
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
+def Mostrar_Titulo():
+    
+    print("╔" + "═" * 38 + "╗")
+    print("║     Unidad_3_Tarea_1    ║")
+    print("║              ¡Bienvenido!                ║")
+    print("╚" + "═" * 38 + "╝")
